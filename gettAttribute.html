@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetAttribute</title>
+</head>
+
+<body>
+    <div id="main">
+        <h1>Working on getAttribute</h1>
+        <p class="para" id="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, quo.</p>
+    </div>
+
+    <script>
+        let mainDiv = document.querySelector("#main")
+        let getId = mainDiv.getAttribute("id");
+        console.log(getId);
+
+        let para = document.querySelector("p");
+
+        // getAttribute
+        let setP = para.getAttribute("class");
+        console.log(setP);
+
+        // setAttribute
+        let setNewPara = para.setAttribute("id", "NewClass")
+        console.log(setNewPara);
+
+    </script>
+</body>
+
+</html>

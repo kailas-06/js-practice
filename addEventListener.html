@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add eventListener</title>
+</head>
+
+<body>
+    <!-- node.addEventListener(event,callback) -->
+    <!-- node.removeEventListener(event,callback) -->
+
+    <button class="btn">Click me</button>
+
+    <script>
+        let btn1 = document.querySelector(".btn")
+        btn1.addEventListener("click", (evt) => {
+            console.log(evt.target);
+            console.log(evt.type);
+            console.log(evt.clientX, evt.clientY);
+        })
+    </script>
+
+</body>
+
+</html>

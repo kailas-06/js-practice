@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 50px;
+            width: 100px;
+            display: flex;
+            background: orange;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+    </div>
+    <script>
+        let boxes = document.querySelectorAll(".box")
+        // boxes[0].innerText = "This is unique value 1";
+        // boxes[1].innerText = "This is unique value 2";
+        // boxes[2].innerText = "This is unique value 3";
+
+        let idx = 1;
+        for (eachBox of boxes) {
+            eachBox.innerText = `This is unique value ${idx}`;
+            idx++;
+        }
+    </script>
+</body>
+
+</html>

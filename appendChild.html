@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <ul class="myList1">
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+            <li>item4</li>
+        </ul>
+        <ul class="myList2">
+            <li>item5</li>
+            <li>item6</li>
+            <li>item7</li>
+            <li>item8</li>
+        </ul>
+        <button type="btn" onClick="myFun()">Click Me</button>
+    </div>
+    <script>
+        function myFun() {
+            const node = document.querySelector(".myList2").firstElementChild;
+            document.querySelector(".myList1").appendChild(node);
+        }
+    </script>
+</body>
+
+</html>

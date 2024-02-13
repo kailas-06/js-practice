@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <ul id="list" style="background-color: yellow;width:25%;">
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+            <li>item4</li>
+            <li class="last">item5</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, necessitatibus.</p>
+
+    </div>
+    <script>
+        let newEl = document.createElement("button")
+        newEl.innerHTML = "Click Me"
+        console.log(newEl);
+
+        let newItem = document.querySelector("#list")   //node decided where to add item
+        // newItem.append(newEl);  //append at the last inside the ul list
+        // newItem.prepend(newEl); //append at the start inside the ul list
+        // newItem.before(newEl);  // add the button at start outside the ul list
+        newItem.after(newEl);   //  add button after outside the ul list
+
+
+        // add new div and element inside it
+        let addnewDiv = document.createElement("div");
+        addnewDiv.innerHTML = "<h3>Heading 3</h3>";
+
+        let addNow = document.querySelector(".main");
+        addNow.append(addnewDiv);
+
+        let del = document.querySelector("#list li:last-child");
+        del.remove()
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

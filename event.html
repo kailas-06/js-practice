@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 80px;
+            width: 80px;
+            background: #000;
+            color: #fff;
+            margin: 50px 0;
+        }
+
+        .box-orange {
+            height: 80px;
+            width: 80px;
+            background: orange;
+            color: #fff;
+            margin: 50px 0;
+        }
+
+        button {
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+
+        <!-- add inline event handling  -->
+        <button id="btn" onclick="console.log('Click me')">Click me</button>
+        <div class="box" onmouseover="console.log('Hello box mouse hover')">Box</div>
+
+        <button id="bts">Click here</button>
+        <div class="box-orange">Box Orange</div>
+
+
+    </div>
+
+
+    <script>
+        let btn1 = document.querySelector("#bts")
+        let box1 = document.querySelector(".box-orange")
+
+        btn1.onclick = (evt) => {
+            console.log("Hello clicked me")
+            console.log(evt.type);
+            console.log(evt.target);
+            console.log(evt.clientX, evt.clientY);
+        }
+
+        box1.onmouseover = (evt) => {
+            box1.style.height = "120px"
+            // console.log("Mouse is hovered");
+            console.log(evt.type);
+        }
+        box1.onmouseleave = (evt) => {
+            box1.style.height = "80px"
+            // console.log("Mouse is leaved");
+            console.log(evt.type);
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>

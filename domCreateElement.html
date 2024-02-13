@@ -1,0 +1,48 @@
+<!-- Question : Create H2 heading element with text " Hello Javascript"  append from "I am new student" using js -->
+
+<!-- Que: Create 3 divs with common class name "box" access them and some unique -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Hello Javascript</h2>
+        <h3 id="heading3">I am heading three</h3>
+        <h4></h4>
+    </div>
+
+    <script>
+        let h2 = document.querySelector("h2")
+        console.log(h2.innerText);
+        h2.innerText = h2.innerText + "I am new student"
+
+        document.getElementById("heading3").innerText = "Heading 3 changed"
+
+        document.querySelector("h4").innerText = "Heading h4"
+
+        // const newDiv = document.createElement("p");
+        // newDiv.innerHTML = "Hello, World!";
+        // const parent = document.querySelector(".container");
+        // parent.appendChild(newDiv);
+
+
+        const div = document.createElement("p");
+        div.innerHTML = "Hello"
+        const mainDiv = document.querySelector(".container")
+        mainDiv.appendChild(div)
+
+
+
+
+    </script>
+</body>
+
+</html>

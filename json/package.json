@@ -1,0 +1,20 @@
+{
+  "name": "json-server",
+  "version": "1.0.0",
+  "description": "A simple JSON server for mocking APIs",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch db.json --port 3001"
+  },
+  "keywords": [
+    "json",
+    "server",
+    "mock",
+    "api"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.16.3"
+  }
+}

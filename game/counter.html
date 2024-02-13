@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+
+<body>
+
+    <div id="countId">0</div>
+    <button id="btn">Click</button>
+
+    <script>
+        const count = document.querySelector("#countId");
+        const button = document.querySelector("#btn");
+        let counter = 0;
+        function updateCount() {
+            counter++;
+            count.innerHTML = `Your count is : ${counter}`
+        }
+        button.addEventListener("click", updateCount)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!-- Qs: create a new button element. Give it a text "click me", background color of red and text coloe of white
+Insert the button as the first element inside the body tag.
+
+Qs: create a p tag give it a class and some styling.
+Now create a new class in css and try to append this class to the <p> element -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para2 {
+            color: orange;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        // ans 1:
+        let btn = document.createElement("button");
+        btn.innerHTML = "Click Me";
+        btn.classList.add("btn")
+
+        btn.style.backgroundColor = 'red';
+        btn.style.color = 'white';
+        document.querySelector("body").prepend(btn);
+
+        // ans 2:
+        let para = document.createElement("p");
+        para.innerText = "Lorem ipsum dolor sit amet."
+
+        // para.style.fontSize = "26px";
+        // para.style.color = "red";
+
+        para.classList.add("para2");
+
+        document.querySelector("body").append(para)
+
+    </script>
+</body>
+
+</html>

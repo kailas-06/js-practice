@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .light {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .dark {
+            background-color: #000;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body class="">
+    <button class="btn">Change mode</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae odio sit numquam esse sed fugiat ad neque ratione
+        sapiente quis cumque veniam exercitationem consequatur, a reiciendis! Itaque explicabo recusandae numquam.</p>
+
+    <script>
+        let tlgMode = document.querySelector(".btn")
+        let body = document.querySelector("body")
+        let currentMode = "light";
+
+
+        tlgMode.addEventListener("click", () => {
+            if (currentMode === "light") {
+                currentMode = "dark";
+                body.classList.add("dark")
+                body.classList.remove("light");
+
+
+            } else {
+                currentMode = "light";
+                body.classList.add("light")
+                body.classList.remove("dark")
+
+
+            }
+        })
+
+    </script>
+</body>
+
+</html>
