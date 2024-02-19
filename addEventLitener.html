@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add eventListener</title>
+</head>
+
+<body>
+    <!-- addEventListerner and remove eventListener -->
+
+    <!-- node.addEventListener("event",callback) -->
+    <!-- node.removeEventListener("event",callback) -->
+
+    <button class="btn">Click me</button>
+
+    <script>
+        const btn = document.querySelector(".btn")
+
+        btn.addEventListener("click", () => {
+            console.log("button is clicked handler 1")
+        })
+        btn.addEventListener("click", () => {
+            console.log("button is clicked handler 2")
+        })
+
+        const handler3 = () => {
+            console.log("button is clicked handler 3")
+        }
+
+        btn.addEventListener("click", handler3)
+
+        btn.addEventListener("click", () => {
+            console.log("button is clicked handler 4")
+        })
+
+        btn.removeEventListener("click", handler3)
+    </script>
+
+</body>
+
+</html>

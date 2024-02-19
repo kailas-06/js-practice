@@ -24,27 +24,42 @@
         sapiente quis cumque veniam exercitationem consequatur, a reiciendis! Itaque explicabo recusandae numquam.</p>
 
     <script>
-        let tlgMode = document.querySelector(".btn")
+        // let tlgMode = document.querySelector(".btn")
+        // let body = document.querySelector("body")
+        // let currentMode = "light";
+
+
+        // tlgMode.addEventListener("click", () => {
+        //     if (currentMode === "light") {
+        //         currentMode = "dark";
+        //         body.classList.add("dark")
+        //         body.classList.remove("light");
+
+        //     } else {
+        //         currentMode = "light";
+        //         body.classList.add("light")
+        //         body.classList.remove("dark")
+        //     }
+        // })
+
+        let toggleBtn = document.querySelector(".btn")
         let body = document.querySelector("body")
-        let currentMode = "light";
 
+        let currentTheme = "light"
 
-        tlgMode.addEventListener("click", () => {
-            if (currentMode === "light") {
-                currentMode = "dark";
-                body.classList.add("dark")
-                body.classList.remove("light");
-
-
+        toggleBtn.addEventListener("click", () => {
+            if (currentTheme === "light") {
+                currentTheme = "dark";
+                // console.log(currentTheme)
+                body.classList.add("dark");
+                body.classList.remove("light")
             } else {
-                currentMode = "light";
+                currentTheme = "light"
+                // console.log(currentTheme);
                 body.classList.add("light")
                 body.classList.remove("dark")
-
-
             }
         })
-
     </script>
 </body>
 

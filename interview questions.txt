@@ -1,0 +1,66 @@
+CSS display properties
+flex vs grid
+Difference between let, var, const
+How to manipulate document in JS?
+Write a JS code for input - [1,[2,3],[4,[5,6]]]  and output should be - [1,2,3,4,5,6] without using flat method.
+DataTypes in Js
+difference between vh and vw?
+What is event delegation?
+What are flex-properties in CSS?
+Difference between block and inline
+What are pseudo classes?
+output of console.log(1<2<3) and console.log(3>2>1)
+Lifecycle of React
+What is callback hell?
+What is hoisting?
+What is Redux?
+How to check type of a variable in JS?
+What is DocType?
+What are Semantic elements? List them
+what is webpack?
+What is use of routing in ReactJs
+Difference between null and undefined
+Spread operator, rest operator
+How to convert int to string and string to int?
+How to insert video into HTML?
+What is used to handle async operations?
+What is the method and keyword for debugging our code?
+What is use of z-index?
+Is <a> tag applied only to text?
+What is closure?
+Shallow copy, deep copy
+What is React Js?
+What is box-model in css?
+what are anonymous function
+What is callback?
+Consider a scenario where i have a const obj1 = { a: 1 } now i want to copy this same into another var what to use?
+How to bind or store your data into React component?
+What are different selectors in CSS?
+what is pwa method of installing website as a app?
+what is async & await?
+const emp = [   { name: 'abc', marks: 80 },   { name: 'qwert', marks: 82 }, ]; write a fun for to emp name who has > 80 marks?
+In image tag there is a loading & onerror attribute are there what is the use of it?
+what are the array methods? explain the difference b/w map, foreach & filter, loose equal (==) & strict equal(===)?
+How many data types in JS?
+what is box-modal & what are semantic & non-semantic tags?
+for(var i = 0; i < 3; i++) { setTimeout(() => { console.log(i)}, 2000)} what is the output?
+A tool used for coding
+Question regarding Flexbox
+Coding round with on-call scenarios
+question-based on Bootstrap and Tailwind
+Question regarding Grid
+Difference between Flexbox and grid
+question-related to Figma
+Media query screen size
+CSS display properties
+let a1 = a2 = [ ]   a1.push(1)   console.log(a1, a2)
+let test = [10,20,30,40,20]   [2:25 PM] Durvesh Mundhe  const printNumbers = {     phrase: 'The current value is:',     numbers: [1, 2, 3, 4],      loop() {       this.numbers.forEach(function (number) {         console.log(this.phrase, number)       })     },   }
+4 + true
+const fruits = [‘apple’, ‘banana’]   fruits.length = 1   console.log(fruits)
+4 + 'true'
+function first() {     console.log(1)   }    function second() {     setTimeout(() => {       console.log(2)     }, 0)   }    function third() {     console.log(3)   }      // Execute the functions   first()   second()   third()
+vue all scenario based questions
+const obj1 = { a: 1 }   const obj2 = { a: 1 }   obj1 == obj2 ; obj1.a == obj2.a
+• Create sidebar using this json • Display menu only if isVisible is true • If any menu has hasChildren as true, then read another json which has children items using fetch or axios. These children should be added as a children items in sidebar for that menu. • Each menu item can contain following flags o IsEditAction -> show/hide edit button o IsAddAction -> show/hide add button o IsVisible -> show/hide menu item o HasChildren -> indicated if menu item has children
+given a non-empty array of integers nums , every element appears twuce expect for one, find that single one
+given an integer array nums return true if any value apppears at least twice in the array,and return false if every element is distinct

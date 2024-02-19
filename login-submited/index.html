@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function mydata(){
+            var user = document.geElementById("n1").value;
+            var userpass = document.geElementById("n2").value;
+            
+            if(user=="" || userpass==""){
+                alert("All fields are mandatory");
+                return false;
+            }else{
+                true;
+            }
+            
+            }
+    </script>
+</head>
+<body>
+   
+    <form action="abc.html" onsubmit="return mydata()" name="myform">
+        username:<input type="text" id="n1"><br><br>
+        Password: <input type="password" id="n2"><br><br>
+        <input type="submit" name="sbtn" value="login">
+    </form>
+   
+</body>
+</html>

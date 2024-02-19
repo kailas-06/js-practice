@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype and Protype Inheritance</title>
+</head>
+
+<body>
+
+    <script>
+
+        // objects can inherit properties from other objects — prototypes.
+
+        const student = {
+            name() {
+                name: "Sameer Jadhav";
+            }
+        }
+        const std = {
+            rollno: 20,
+        }
+        const std1 = {
+            rollno: 30
+        }
+        std.__proto__ = student;
+        std1.__proto__ = student;
+
+        console.log(std1.name)
+
+
+        let animal = { legs: 4 };
+        let pet = { color: "black", __proto__: animal }
+        console.log(pet.legs)
+
+
+        const tail = {
+            hasTail: true,
+        }
+        const petAnimal = {
+            legs: 4,
+            __proto__: tail,
+
+        }
+        const cat = {
+            sound: "Meow",
+            __proto__: petAnimal
+        }
+
+        console.log(cat)
+
+        // JavaScript has classes!
+
+        class pet2 {
+            legs = 4;
+            constructor(sound) {
+                this.sound = sound;
+            }
+        }
+        const cat2 = new pet2("Meow")
+        console.log(cat2)
+
+    </script>
+
+</body>
+
+</html>

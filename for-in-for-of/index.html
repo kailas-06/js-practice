@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for-in and for-of loops</title>
+</head>
+
+<body>
+
+
+</body>
+<script>
+
+    // for showing key or property of the object then use for--in loop
+    const student = {
+        name: "Ram",
+        surname: "Sumit",
+        age: "30"
+    }
+    for (let std in student) {
+        console.log(std)
+    }
+
+    for (let st of Object.keys(student)) {
+        console.log(st)
+    }
+
+
+    const fname = "Madhav";
+
+    for (firstname of fname) {
+        console.log(firstname)
+    }
+
+    // If we need to show index of the array the use fof--of
+
+    const arrays = ["dove", 1, 2, 3, 4, 5, 6, 7, 8];
+    for (let arr of arrays) {
+        console.log(`the key are ${arr}`)
+    }
+</script>
+
+</html>
