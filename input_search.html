@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input search</title>
+    <style>
+        .container {
+            /* max-width: 1180px; */
+            margin: 50px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+        }
+
+        .text-input {
+            margin-bottom: 30px;
+        }
+
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .product {
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <input type="text" class="text-input" id="search-item" placeholder="Search product" onkeyup="search()">
+        </form>
+        <div class="product-container">
+            <div class="product">
+                <h3>Shooes</h3>
+                <h5>price: 300Rs.</h5>
+            </div>
+            <div class="product">
+                <h3>Belt</h3>
+                <h5>price: 100Rs.</h5>
+            </div>
+            <div class="product">
+                <h3>Wallet</h3>
+                <h5>price: 200Rs.</h5>
+            </div>
+            <div class="product">
+                <h3>Shooes white</h3>
+                <h5>price: 400Rs.</h5>
+            </div>
+        </div>
+    </div>
+    <script>
+        const search = () => {
+            const searchbox = document.getElementById("search-item").value.toUpperCase();
+            const storeItem = document.querySelector(".product-container");
+            const product = document.querySelectorAll(".product");
+            console.log(product);
+
+            for (var i = 0; i < product.length; i++) {
+                let match = product[i].querySelector('h3');
+                if (match) {
+                    let textvalue = match.textContent || match.innerHTML;
+                    if (textvalue.toUpperCase().indexOf(searchbox) > -1) {
+                        product[i].style.display = "";
+                    } else {
+                        product[i].style.display = "none";
+                    }
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>

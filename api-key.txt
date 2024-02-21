@@ -1,0 +1,3 @@
+api-key ="547ba88fe1e1459aa8883c355079675e"
+
+url ="https://newsapi.org/v2/everything?q"
